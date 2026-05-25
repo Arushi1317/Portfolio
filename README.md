@@ -69,26 +69,23 @@ git status
 git commit -m "Add GitHub Actions workflow"
  git remote add origin https://github.com/Arushi1317/prac5.git   
 Git push -u origin main
-name: Hello World Workflow
 
+name: Hello World Workflow
 
 on:
   push:
     branches: [ main ]
 
-
 jobs:
   greet:
     runs-on: ubuntu-latest
-
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-
       - name: Print Success Message
         run: echo 'Build Successful! Workflow triggered on push.'
+
  Check in git actions
 
 
